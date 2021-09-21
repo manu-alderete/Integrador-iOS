@@ -34,6 +34,6 @@ class InitialViewController: BaseViewController {
     }
     
     @objc private func termsHandler() {
-        
+        present(TermsViewController(), animated: true)
     }
 }
