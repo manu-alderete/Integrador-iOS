@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52251EBCB772D041232E3938 /* libPods-NotBored.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4A56F66FF85E44D97730A8 /* libPods-NotBored.a */; };
 		5E71402226FA2381004F7407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71402126FA2381004F7407 /* AppDelegate.swift */; };
 		5E71402426FA2381004F7407 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71402326FA2381004F7407 /* SceneDelegate.swift */; };
-		5E71402626FA2381004F7407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71402526FA2381004F7407 /* ViewController.swift */; };
-		5E71402926FA2381004F7407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E71402726FA2381004F7407 /* Main.storyboard */; };
 		5E71402B26FA2383004F7407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E71402A26FA2383004F7407 /* Assets.xcassets */; };
 		5E71402E26FA2383004F7407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E71402C26FA2383004F7407 /* LaunchScreen.storyboard */; };
+		5E71403A26FA24FD004F7407 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71403926FA24FD004F7407 /* NavigationHelper.swift */; };
+		5E71403F26FA2593004F7407 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71403D26FA2593004F7407 /* SplashViewController.swift */; };
+		5E71404026FA2593004F7407 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71403E26FA2593004F7407 /* SplashViewController.xib */; };
+		5E71404326FA26E7004F7407 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71404226FA26E7004F7407 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4A56F66FF85E44D97730A8 /* libPods-NotBored.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotBored.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E71401E26FA2381004F7407 /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E71402126FA2381004F7407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E71402326FA2381004F7407 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E71402526FA2381004F7407 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E71402826FA2381004F7407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E71402A26FA2383004F7407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E71402D26FA2383004F7407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E71402F26FA2383004F7407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E71403926FA24FD004F7407 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		5E71403D26FA2593004F7407 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		5E71403E26FA2593004F7407 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		5E71404226FA26E7004F7407 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		75F5A1D70DAC6536AB4416DE /* Pods-NotBored.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.debug.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.debug.xcconfig"; sourceTree = "<group>"; };
+		B1FCE155F4EB5CD71DBC8ACB /* Pods-NotBored.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.release.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52251EBCB772D041232E3938 /* libPods-NotBored.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				5E71402026FA2381004F7407 /* NotBored */,
 				5E71401F26FA2381004F7407 /* Products */,
+				E13CBEFC578ABF0F7E064B2B /* Pods */,
+				F1AF18D7F1904FC700767CC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,90 @@
 		5E71402026FA2381004F7407 /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
-				5E71402126FA2381004F7407 /* AppDelegate.swift */,
-				5E71402326FA2381004F7407 /* SceneDelegate.swift */,
-				5E71402526FA2381004F7407 /* ViewController.swift */,
-				5E71402726FA2381004F7407 /* Main.storyboard */,
-				5E71402A26FA2383004F7407 /* Assets.xcassets */,
-				5E71402C26FA2383004F7407 /* LaunchScreen.storyboard */,
+				5E71404126FA259D004F7407 /* Startup */,
+				5E71403B26FA257A004F7407 /* Application */,
+				5E71403526FA2497004F7407 /* Resources */,
 				5E71402F26FA2383004F7407 /* Info.plist */,
 			);
 			path = NotBored;
+			sourceTree = "<group>";
+		};
+		5E71403526FA2497004F7407 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E71403826FA24C8004F7407 /* Extensions */,
+				5E71403726FA24C2004F7407 /* Utils */,
+				5E71403626FA24BE004F7407 /* Base */,
+				5E71402A26FA2383004F7407 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E71403626FA24BE004F7407 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5E71404226FA26E7004F7407 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5E71403726FA24C2004F7407 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E71403926FA24FD004F7407 /* NavigationHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5E71403826FA24C8004F7407 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E71403B26FA257A004F7407 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5E71403C26FA2580004F7407 /* Splash */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5E71403C26FA2580004F7407 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				5E71403D26FA2593004F7407 /* SplashViewController.swift */,
+				5E71403E26FA2593004F7407 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		5E71404126FA259D004F7407 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				5E71402126FA2381004F7407 /* AppDelegate.swift */,
+				5E71402326FA2381004F7407 /* SceneDelegate.swift */,
+				5E71402C26FA2383004F7407 /* LaunchScreen.storyboard */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		E13CBEFC578ABF0F7E064B2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75F5A1D70DAC6536AB4416DE /* Pods-NotBored.debug.xcconfig */,
+				B1FCE155F4EB5CD71DBC8ACB /* Pods-NotBored.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1AF18D7F1904FC700767CC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A56F66FF85E44D97730A8 /* libPods-NotBored.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E71403226FA2383004F7407 /* Build configuration list for PBXNativeTarget "NotBored" */;
 			buildPhases = (
+				1FE133183D11C12E3CD00D3D /* [CP] Check Pods Manifest.lock */,
 				5E71401A26FA2381004F7407 /* Sources */,
 				5E71401B26FA2381004F7407 /* Frameworks */,
 				5E71401C26FA2381004F7407 /* Resources */,
@@ -126,34 +213,53 @@
 			files = (
 				5E71402E26FA2383004F7407 /* LaunchScreen.storyboard in Resources */,
 				5E71402B26FA2383004F7407 /* Assets.xcassets in Resources */,
-				5E71402926FA2381004F7407 /* Main.storyboard in Resources */,
+				5E71404026FA2593004F7407 /* SplashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FE133183D11C12E3CD00D3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotBored-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E71401A26FA2381004F7407 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E71402626FA2381004F7407 /* ViewController.swift in Sources */,
+				5E71404326FA26E7004F7407 /* BaseViewController.swift in Sources */,
+				5E71403A26FA24FD004F7407 /* NavigationHelper.swift in Sources */,
 				5E71402226FA2381004F7407 /* AppDelegate.swift in Sources */,
 				5E71402426FA2381004F7407 /* SceneDelegate.swift in Sources */,
+				5E71403F26FA2593004F7407 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5E71402726FA2381004F7407 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E71402826FA2381004F7407 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5E71402C26FA2383004F7407 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +389,7 @@
 		};
 		5E71403326FA2383004F7407 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75F5A1D70DAC6536AB4416DE /* Pods-NotBored.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +408,7 @@
 		};
 		5E71403426FA2383004F7407 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1FCE155F4EB5CD71DBC8ACB /* Pods-NotBored.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
