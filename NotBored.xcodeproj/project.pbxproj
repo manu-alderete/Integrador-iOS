@@ -16,6 +16,12 @@
 		5E71403F26FA2593004F7407 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71403D26FA2593004F7407 /* SplashViewController.swift */; };
 		5E71404026FA2593004F7407 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71403E26FA2593004F7407 /* SplashViewController.xib */; };
 		5E71404326FA26E7004F7407 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71404226FA26E7004F7407 /* BaseViewController.swift */; };
+		5E71404726FA3487004F7407 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71404526FA3487004F7407 /* InitialViewController.swift */; };
+		5E71404826FA3487004F7407 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71404626FA3487004F7407 /* InitialViewController.xib */; };
+		5E71404C26FA3733004F7407 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71404A26FA3733004F7407 /* TermsViewController.swift */; };
+		5E71404D26FA3733004F7407 /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71404B26FA3733004F7407 /* TermsViewController.xib */; };
+		5E71405126FA377C004F7407 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71404F26FA377C004F7407 /* HomeViewController.swift */; };
+		5E71405226FA377C004F7407 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71405026FA377C004F7407 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		5E71403D26FA2593004F7407 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		5E71403E26FA2593004F7407 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		5E71404226FA26E7004F7407 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5E71404526FA3487004F7407 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		5E71404626FA3487004F7407 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		5E71404A26FA3733004F7407 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		5E71404B26FA3733004F7407 /* TermsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsViewController.xib; sourceTree = "<group>"; };
+		5E71404F26FA377C004F7407 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5E71405026FA377C004F7407 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		75F5A1D70DAC6536AB4416DE /* Pods-NotBored.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.debug.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.debug.xcconfig"; sourceTree = "<group>"; };
 		B1FCE155F4EB5CD71DBC8ACB /* Pods-NotBored.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.release.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +124,7 @@
 		5E71403B26FA257A004F7407 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				5E71404426FA3456004F7407 /* Initial */,
 				5E71403C26FA2580004F7407 /* Splash */,
 			);
 			path = Application;
@@ -134,6 +147,35 @@
 				5E71402C26FA2383004F7407 /* LaunchScreen.storyboard */,
 			);
 			path = Startup;
+			sourceTree = "<group>";
+		};
+		5E71404426FA3456004F7407 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				5E71404E26FA3767004F7407 /* Home */,
+				5E71404926FA3704004F7407 /* Terms */,
+				5E71404526FA3487004F7407 /* InitialViewController.swift */,
+				5E71404626FA3487004F7407 /* InitialViewController.xib */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		5E71404926FA3704004F7407 /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				5E71404A26FA3733004F7407 /* TermsViewController.swift */,
+				5E71404B26FA3733004F7407 /* TermsViewController.xib */,
+			);
+			path = Terms;
+			sourceTree = "<group>";
+		};
+		5E71404E26FA3767004F7407 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5E71404F26FA377C004F7407 /* HomeViewController.swift */,
+				5E71405026FA377C004F7407 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		E13CBEFC578ABF0F7E064B2B /* Pods */ = {
@@ -214,6 +256,9 @@
 				5E71402E26FA2383004F7407 /* LaunchScreen.storyboard in Resources */,
 				5E71402B26FA2383004F7407 /* Assets.xcassets in Resources */,
 				5E71404026FA2593004F7407 /* SplashViewController.xib in Resources */,
+				5E71404826FA3487004F7407 /* InitialViewController.xib in Resources */,
+				5E71404D26FA3733004F7407 /* TermsViewController.xib in Resources */,
+				5E71405226FA377C004F7407 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +297,11 @@
 				5E71404326FA26E7004F7407 /* BaseViewController.swift in Sources */,
 				5E71403A26FA24FD004F7407 /* NavigationHelper.swift in Sources */,
 				5E71402226FA2381004F7407 /* AppDelegate.swift in Sources */,
+				5E71405126FA377C004F7407 /* HomeViewController.swift in Sources */,
+				5E71404726FA3487004F7407 /* InitialViewController.swift in Sources */,
 				5E71402426FA2381004F7407 /* SceneDelegate.swift in Sources */,
 				5E71403F26FA2593004F7407 /* SplashViewController.swift in Sources */,
+				5E71404C26FA3733004F7407 /* TermsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
