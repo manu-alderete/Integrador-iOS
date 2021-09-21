@@ -57,7 +57,7 @@
                                 <constraint firstAttribute="height" constant="40" id="SjT-go-xfp"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                         </textField>
                     </subviews>
                 </stackView>

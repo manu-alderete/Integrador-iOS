@@ -13,14 +13,25 @@ class InitialViewController: BaseViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var termsButton: UIButton!
     
+    var viewModel: InitialViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = InitialViewModel()
+        
         hidesNavigationBar = true
+        revertsNavigationBar = false
         
         configureViews()
         
         startButton.addTarget(self, action: #selector(startHandler), for: .touchUpInside)
         termsButton.addTarget(self, action: #selector(termsHandler), for: .touchUpInside)
+        
+        quantityTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        
+        viewModel.onParticipantsValueChange = { [weak self] value in
+            self?.startButton.isEnabled = value != nil && value! > 0
+        }
     }
     
     private func configureViews() {
@@ -30,10 +41,25 @@ class InitialViewController: BaseViewController {
     }
 
     @objc private func startHandler() {
-        
+        guard let participants = viewModel.participants else { return }
+        let viewModel = HomeViewModel(participants: participants)
+        NavigationHelper.setRoot(HomeViewController(viewModel: viewModel))
     }
     
     @objc private func termsHandler() {
-        present(TermsViewController(), animated: true)
+        let vc = TermsViewController()
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+     
+    @objc private func textFieldDidChange(_ textField: UITextField) {
+        guard textField === quantityTextField,
+              let text = textField.text,
+              let value = Int(text) else
+        {
+            viewModel.participants = nil
+            return
+        }
+        viewModel.participants = value
     }
 }

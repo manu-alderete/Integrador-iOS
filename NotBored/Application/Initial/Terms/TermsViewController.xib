@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsViewController" customModule="NotBored" customModuleProvider="target">
             <connections>
                 <outlet property="closeButton" destination="ECx-bF-C6B" id="fXo-jw-lE5"/>
+                <outlet property="scrollView" destination="hcI-62-qBf" id="Cva-aH-KNH"/>
+                <outlet property="titleLabel" destination="DJH-RG-JBj" id="X4l-yk-KX5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -53,14 +55,33 @@
                         <constraint firstItem="R2A-Dk-DNc" firstAttribute="leading" secondItem="kYV-bO-sOS" secondAttribute="leading" constant="30" id="tiy-n9-fLI"/>
                     </constraints>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcI-62-qBf">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcI-62-qBf">
                     <rect key="frame" x="0.0" y="94" width="414" height="768"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mJD-qE-Ie5">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="9243.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="9293.5"/>
                             <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4g-VS-Y3x">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYL-k6-r3e">
+                                            <rect key="frame" x="30" y="0.0" width="354" height="50"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="SYL-k6-r3e" firstAttribute="top" secondItem="Z4g-VS-Y3x" secondAttribute="top" id="28e-6m-CTj"/>
+                                        <constraint firstItem="SYL-k6-r3e" firstAttribute="leading" secondItem="Z4g-VS-Y3x" secondAttribute="leading" constant="30" id="FjQ-aA-a9H"/>
+                                        <constraint firstAttribute="height" constant="50" id="K0z-d2-IpJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="SYL-k6-r3e" secondAttribute="trailing" constant="30" id="TgI-eO-RY8"/>
+                                        <constraint firstAttribute="bottom" secondItem="SYL-k6-r3e" secondAttribute="bottom" id="amx-qc-wah"/>
+                                    </constraints>
+                                </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lk-gK-laB">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                    <rect key="frame" x="0.0" y="50" width="414" height="150"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Bored" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BvY-D0-GSb">
                                             <rect key="frame" x="107.5" y="47.5" width="199" height="55"/>
@@ -78,11 +99,11 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTu-99-NdH">
-                                    <rect key="frame" x="0.0" y="150" width="414" height="9093.5"/>
+                                    <rect key="frame" x="0.0" y="200" width="414" height="9093.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eG-Qw-gXc">
                                             <rect key="frame" x="30" y="0.0" width="354" height="9068.5"/>
-                                            <mutableString key="text">Lorem ipsum dolor sit amet consectetur adipiscing elit inceptos ridiculus iaculis,
+                                            <string key="text">Lorem ipsum dolor sit amet consectetur adipiscing elit inceptos ridiculus iaculis,
 nullam ligula elementum duis tellus maecenas nec fermentum sed dictum
 laoreet, taciti donec habitant quam purus ultricies porta posuere sociis. Cubilia
 senectus netus integer tempor dignissim viverra nostra tellus scelerisque aliquet,
@@ -115,7 +136,7 @@ vestibulum cum leo semper fusce porta eu fermentum. Proin nisi suspendisse
 class facilisi curabitur quisque, fusce vulputate semper a nulla velit, duis in orci
 faucibus turpis. Risus metus magnis aliquam accumsan laoreet congue per,
 tempus purus et odio senectus sodales vulputate, ligula malesuada dis habitasse
-nullam pellentesque.</mutableString>
+nullam pellentesque.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>

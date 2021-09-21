@@ -22,6 +22,12 @@
 		5E71404D26FA3733004F7407 /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71404B26FA3733004F7407 /* TermsViewController.xib */; };
 		5E71405126FA377C004F7407 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71404F26FA377C004F7407 /* HomeViewController.swift */; };
 		5E71405226FA377C004F7407 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71405026FA377C004F7407 /* HomeViewController.xib */; };
+		5E71405626FA6286004F7407 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71405526FA6286004F7407 /* HomeViewModel.swift */; };
+		5E71405826FA63D0004F7407 /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71405726FA63D0004F7407 /* InitialViewModel.swift */; };
+		5E71405B26FA6D5B004F7407 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71405A26FA6D5B004F7407 /* Activity.swift */; };
+		5E71405F26FA7055004F7407 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71405D26FA7055004F7407 /* CategoryTableViewCell.swift */; };
+		5E71406026FA7055004F7407 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71405E26FA7055004F7407 /* CategoryTableViewCell.xib */; };
+		5E71406226FA7568004F7407 /* TableView+Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71406126FA7568004F7407 /* TableView+Configure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		5E71404B26FA3733004F7407 /* TermsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsViewController.xib; sourceTree = "<group>"; };
 		5E71404F26FA377C004F7407 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E71405026FA377C004F7407 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		5E71405526FA6286004F7407 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5E71405726FA63D0004F7407 /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
+		5E71405A26FA6D5B004F7407 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		5E71405D26FA7055004F7407 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		5E71405E26FA7055004F7407 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		5E71406126FA7568004F7407 /* TableView+Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Configure.swift"; sourceTree = "<group>"; };
 		75F5A1D70DAC6536AB4416DE /* Pods-NotBored.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.debug.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.debug.xcconfig"; sourceTree = "<group>"; };
 		B1FCE155F4EB5CD71DBC8ACB /* Pods-NotBored.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.release.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +91,7 @@
 		5E71402026FA2381004F7407 /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
+				5E71405926FA6C5D004F7407 /* Model */,
 				5E71404126FA259D004F7407 /* Startup */,
 				5E71403B26FA257A004F7407 /* Application */,
 				5E71403526FA2497004F7407 /* Resources */,
@@ -117,6 +130,7 @@
 		5E71403826FA24C8004F7407 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5E71406126FA7568004F7407 /* TableView+Configure.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -154,6 +168,7 @@
 			children = (
 				5E71404E26FA3767004F7407 /* Home */,
 				5E71404926FA3704004F7407 /* Terms */,
+				5E71405726FA63D0004F7407 /* InitialViewModel.swift */,
 				5E71404526FA3487004F7407 /* InitialViewController.swift */,
 				5E71404626FA3487004F7407 /* InitialViewController.xib */,
 			);
@@ -172,10 +187,29 @@
 		5E71404E26FA3767004F7407 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5E71405C26FA703F004F7407 /* Cell */,
+				5E71405526FA6286004F7407 /* HomeViewModel.swift */,
 				5E71404F26FA377C004F7407 /* HomeViewController.swift */,
 				5E71405026FA377C004F7407 /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		5E71405926FA6C5D004F7407 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E71405A26FA6D5B004F7407 /* Activity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E71405C26FA703F004F7407 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5E71405D26FA7055004F7407 /* CategoryTableViewCell.swift */,
+				5E71405E26FA7055004F7407 /* CategoryTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E13CBEFC578ABF0F7E064B2B /* Pods */ = {
@@ -254,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E71402E26FA2383004F7407 /* LaunchScreen.storyboard in Resources */,
+				5E71406026FA7055004F7407 /* CategoryTableViewCell.xib in Resources */,
 				5E71402B26FA2383004F7407 /* Assets.xcassets in Resources */,
 				5E71404026FA2593004F7407 /* SplashViewController.xib in Resources */,
 				5E71404826FA3487004F7407 /* InitialViewController.xib in Resources */,
@@ -295,13 +330,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E71404326FA26E7004F7407 /* BaseViewController.swift in Sources */,
+				5E71405826FA63D0004F7407 /* InitialViewModel.swift in Sources */,
+				5E71405626FA6286004F7407 /* HomeViewModel.swift in Sources */,
 				5E71403A26FA24FD004F7407 /* NavigationHelper.swift in Sources */,
 				5E71402226FA2381004F7407 /* AppDelegate.swift in Sources */,
 				5E71405126FA377C004F7407 /* HomeViewController.swift in Sources */,
+				5E71406226FA7568004F7407 /* TableView+Configure.swift in Sources */,
 				5E71404726FA3487004F7407 /* InitialViewController.swift in Sources */,
 				5E71402426FA2381004F7407 /* SceneDelegate.swift in Sources */,
 				5E71403F26FA2593004F7407 /* SplashViewController.swift in Sources */,
 				5E71404C26FA3733004F7407 /* TermsViewController.swift in Sources */,
+				5E71405B26FA6D5B004F7407 /* Activity.swift in Sources */,
+				5E71405F26FA7055004F7407 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
