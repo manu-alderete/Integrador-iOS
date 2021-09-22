@@ -21,6 +21,9 @@ class SuggestionViewController: BaseViewController {
     @IBOutlet weak var informationStack: UIStackView!
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backButtonView: UIView!
+    
     let viewModel: SuggestionViewModel!
     
     init(participants: Int? = nil, category: Activity.ActivityType? = nil) {
@@ -46,8 +49,10 @@ class SuggestionViewController: BaseViewController {
         activityLabel.alpha = 0
         informationStack.alpha = 0
         self.nextButton.alpha = 0
-//        backButton.addTarget(self, action: #selector(backHandler), for: .touchUpInside)
         viewModel.fetchActivity()
+        
+        backButton.addTarget(self, action: #selector(backHandler), for: .touchUpInside)
+        backButtonView.isHidden = viewModel.category == nil
         
         viewModel.onSuccess = { [weak self] in
             guard let self = self else { return }
