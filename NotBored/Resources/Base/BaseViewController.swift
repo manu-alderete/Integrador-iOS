@@ -35,4 +35,12 @@ class BaseViewController: UIViewController {
             navigationController?.setNavigationBarHidden(false, animated: true)
         }
     }
+    
+    @objc func backHandler() {
+        if self.isBeingPresented {
+            self.dismiss(animated: true)
+        } else {
+            navigationController?.popViewController(animated: true)
+        }
+    }
 }

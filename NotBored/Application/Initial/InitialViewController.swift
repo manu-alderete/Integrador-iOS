@@ -23,21 +23,36 @@ class InitialViewController: BaseViewController {
         revertsNavigationBar = false
         
         configureViews()
-        
-        startButton.addTarget(self, action: #selector(startHandler), for: .touchUpInside)
-        termsButton.addTarget(self, action: #selector(termsHandler), for: .touchUpInside)
-        
-        quantityTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
-        
+                
         viewModel.onParticipantsValueChange = { [weak self] value in
             self?.startButton.isEnabled = value != nil && value! > 0
         }
+        
+        let attrs = [
+            .font : UIFont.systemFont(ofSize: 16.0),
+            .foregroundColor : UIColor.black,
+            .underlineStyle : 1
+        ] as [NSAttributedString.Key : Any]
+
+        let attributedString = NSMutableAttributedString(string: "")
+
+        let buttonTitleStr = NSMutableAttributedString(string: "Terms And Conditions", attributes: attrs)
+        attributedString.append(buttonTitleStr)
+        termsButton.setAttributedTitle(attributedString, for: .normal)
     }
     
     private func configureViews() {
         quantityTextField.layer.borderWidth = 1
         quantityTextField.layer.borderColor = UIColor.lightGray.cgColor
         quantityTextField.layer.cornerRadius = 5
+
+        startButton.layer.cornerRadius = 5
+        
+        startButton.addTarget(self, action: #selector(startHandler), for: .touchUpInside)
+        termsButton.addTarget(self, action: #selector(termsHandler), for: .touchUpInside)
+        
+        quantityTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+
     }
 
     @objc private func startHandler() {

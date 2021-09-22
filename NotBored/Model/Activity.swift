@@ -16,7 +16,7 @@ struct Activity: Codable {
     let link: String?
     let key: String?
     
-    enum ActivityType: String, Codable {
+    enum ActivityType: String, CaseIterable, Codable {
         case education
         case recreational
         case social
@@ -26,6 +26,34 @@ struct Activity: Codable {
         case relaxation
         case music
         case busywork
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "activity"
+        case accessibility
+        case activityType = "activity_type"
+        case participants
+        case price
+        case link
+        case key
+    }
+    
+    func getCostName() -> String {
+        var result = ""
+        if let price = self.price, price >= 0 {
+            if price == 0 {
+                result = "Free"
+            } else if price <= 0.3 {
+                result = "Low"
+            } else if price <= 0.6 {
+                result = "medium"
+            } else {
+                result = "High"
+            }
+        } else {
+            result = "-"
+        }
+        return result
     }
 }
 

@@ -8,9 +8,9 @@
 import Foundation
 
 final class HomeViewModel {
-    private let participants: Int
+    let participants: Int
     
-    private(set) var categories: [Category] = [] {
+    private(set) var categories: [Activity.ActivityType] = [] {
         didSet {
             onCategoriesValueChange?()
         }
@@ -23,8 +23,6 @@ final class HomeViewModel {
     }
     
     func fetchCategories() {
-        categories = [
-            
-        ]
+        categories = Activity.ActivityType.allCases
     }
 }

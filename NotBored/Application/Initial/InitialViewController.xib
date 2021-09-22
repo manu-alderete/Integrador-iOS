@@ -62,7 +62,7 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qxU-Ea-4yh">
-                    <rect key="frame" x="32" y="623.5" width="350" height="95"/>
+                    <rect key="frame" x="32" y="598" width="350" height="120.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLN-5l-xM5">
                             <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
@@ -74,14 +74,27 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                         </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KqS-se-fne">
+                            <rect key="frame" x="0.0" y="50" width="350" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="DNz-xo-p0b"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By pressing Start you are accepting our" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pox-nK-i2e">
+                            <rect key="frame" x="0.0" y="70" width="350" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gf6-bQ-8xK">
-                            <rect key="frame" x="0.0" y="50" width="350" height="45"/>
+                            <rect key="frame" x="0.0" y="90.5" width="350" height="30"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cPD-xz-xxR">
-                                    <rect key="frame" x="96" y="6.5" width="158" height="32"/>
+                                    <rect key="frame" x="96" y="0.0" width="158" height="30"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdh-Ol-ONr">
-                                            <rect key="frame" x="0.0" y="0.0" width="158" height="32"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <state key="normal" title="Terms and Conditions">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,9 +107,9 @@
                             <constraints>
                                 <constraint firstItem="cPD-xz-xxR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gf6-bQ-8xK" secondAttribute="leading" id="2Yn-gY-0x4"/>
                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cPD-xz-xxR" secondAttribute="bottom" id="8q2-Qb-7iC"/>
+                                <constraint firstAttribute="height" constant="30" id="G8C-lp-TA8"/>
                                 <constraint firstItem="cPD-xz-xxR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gf6-bQ-8xK" secondAttribute="top" id="Tc1-HH-izs"/>
                                 <constraint firstItem="cPD-xz-xxR" firstAttribute="centerY" secondItem="gf6-bQ-8xK" secondAttribute="centerY" id="a7L-Nl-kU0"/>
-                                <constraint firstAttribute="height" constant="45" id="g1Z-bh-mXi"/>
                                 <constraint firstItem="cPD-xz-xxR" firstAttribute="centerX" secondItem="gf6-bQ-8xK" secondAttribute="centerX" id="m3B-GI-pqS"/>
                             </constraints>
                         </view>
