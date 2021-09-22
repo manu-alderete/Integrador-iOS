@@ -15,6 +15,7 @@
                 <outlet property="backButton" destination="9MN-eq-VgW" id="hnw-1a-nLT"/>
                 <outlet property="categoryLabel" destination="Swq-VS-sFa" id="usx-qm-81R"/>
                 <outlet property="categoryView" destination="nyn-uf-i1t" id="i3H-46-gtB"/>
+                <outlet property="informationStack" destination="fw6-12-LV8" id="YgP-bi-8cU"/>
                 <outlet property="nextButton" destination="HHA-vu-Nv5" id="nbQ-mu-B78"/>
                 <outlet property="participantsLabel" destination="YRu-lJ-5GM" id="2sg-qB-dmg"/>
                 <outlet property="priceLabel" destination="VXJ-Nx-L08" id="KEI-1U-MJB"/>

@@ -8,7 +8,7 @@
 import Foundation
 
 final class HomeViewModel {
-    let participants: Int
+    let participants: Int?
     
     private(set) var categories: [Activity.ActivityType] = [] {
         didSet {
@@ -18,7 +18,7 @@ final class HomeViewModel {
     
     var onCategoriesValueChange: (()->Void)? = nil
     
-    init(participants: Int) {
+    init(participants: Int?) {
         self.participants = participants
     }
     

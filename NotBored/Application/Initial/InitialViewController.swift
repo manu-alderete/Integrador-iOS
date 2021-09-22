@@ -56,8 +56,7 @@ class InitialViewController: BaseViewController {
     }
 
     @objc private func startHandler() {
-        guard let participants = viewModel.participants else { return }
-        let viewModel = HomeViewModel(participants: participants)
+        let viewModel = HomeViewModel(participants: self.viewModel.participants)
         NavigationHelper.setRoot(HomeViewController(viewModel: viewModel))
     }
     

@@ -10,6 +10,14 @@ import Foundation
 struct ActivityService {
     let apiClient = AlamofireAPIClient()
     
+    private struct ErrorResponse: Codable {
+        let error: String
+    }
+    
+    enum APIError: Error {
+        case parameters
+    }
+    
     func getActivity(
         participants: Int? = nil,
         category: Activity.ActivityType? = nil,
@@ -28,6 +36,10 @@ struct ActivityService {
             switch response {
             case .success(let data):
                 do {
+                    if let _ = try? JSONDecoder().decode(ErrorResponse.self, from: data) {
+                        completion(.failure(APIError.parameters))
+                        return
+                    }
                     let activity = try JSONDecoder().decode(Activity.self, from: data)
                     completion(.success(activity))
                 } catch {
@@ -38,5 +50,6 @@ struct ActivityService {
                 completion(.failure(error))
             }
         }
+        
     }
 }
