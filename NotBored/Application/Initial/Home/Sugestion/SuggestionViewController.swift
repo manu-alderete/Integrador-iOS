@@ -42,7 +42,7 @@ class SuggestionViewController: BaseViewController {
         categoryView.alpha = viewModel.category != nil ? 0 : 1
         hidesNavigationBar = true
         revertsNavigationBar = false
-        titleLabel.text = viewModel.category?.rawValue.capitalized
+        titleLabel.text = viewModel.category?.rawValue.capitalized ?? "Random"
         activityLabel.alpha = 0
         informationStack.alpha = 0
         self.nextButton.alpha = 0
@@ -57,6 +57,8 @@ class SuggestionViewController: BaseViewController {
             self.activityLabel.alpha = 1
             self.informationStack.alpha = 1
             self.nextButton.alpha = 1
+            self.titleLabel.text = self.viewModel.category?.rawValue.capitalized
+            self.categoryLabel.text = self.viewModel.category?.rawValue.capitalized
         }
         
         viewModel.onFailure = { [weak self] error in
