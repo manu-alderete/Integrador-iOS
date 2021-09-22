@@ -58,7 +58,7 @@ class SuggestionViewController: BaseViewController {
             self.informationStack.alpha = 1
             self.nextButton.alpha = 1
             self.titleLabel.text = self.viewModel.category?.rawValue.capitalized
-            self.categoryLabel.text = self.viewModel.category?.rawValue.capitalized
+            self.categoryLabel.text = self.viewModel.activity?.activityType?.rawValue.capitalized
         }
         
         viewModel.onFailure = { [weak self] error in
