@@ -22,9 +22,9 @@
 		5E71404826FA3487004F7407 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71404626FA3487004F7407 /* InitialViewController.xib */; };
 		5E71404C26FA3733004F7407 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71404A26FA3733004F7407 /* TermsViewController.swift */; };
 		5E71404D26FA3733004F7407 /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71404B26FA3733004F7407 /* TermsViewController.xib */; };
-		5E71405126FA377C004F7407 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71404F26FA377C004F7407 /* HomeViewController.swift */; };
-		5E71405226FA377C004F7407 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71405026FA377C004F7407 /* HomeViewController.xib */; };
-		5E71405626FA6286004F7407 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71405526FA6286004F7407 /* HomeViewModel.swift */; };
+		5E71405126FA377C004F7407 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71404F26FA377C004F7407 /* CategoriesViewController.swift */; };
+		5E71405226FA377C004F7407 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E71405026FA377C004F7407 /* CategoriesViewController.xib */; };
+		5E71405626FA6286004F7407 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71405526FA6286004F7407 /* CategoriesViewModel.swift */; };
 		5E71405826FA63D0004F7407 /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71405726FA63D0004F7407 /* InitialViewModel.swift */; };
 		5E71405B26FA6D5B004F7407 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71405A26FA6D5B004F7407 /* Activity.swift */; };
 		5E71405F26FA7055004F7407 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71405D26FA7055004F7407 /* CategoryTableViewCell.swift */; };
@@ -33,6 +33,7 @@
 		5EEDCEAB26FB888400288A5E /* SuggestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEDCEAA26FB888400288A5E /* SuggestionViewModel.swift */; };
 		5EEDCEAF26FBA13600288A5E /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEDCEAE26FBA13600288A5E /* ActivityService.swift */; };
 		5EEDCEB126FBA1EA00288A5E /* AlamofireAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEDCEB026FBA1EA00288A5E /* AlamofireAPIClient.swift */; };
+		5EEDCEB426FBD8EC00288A5E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEDCEB326FBD8EC00288A5E /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +54,9 @@
 		5E71404626FA3487004F7407 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 		5E71404A26FA3733004F7407 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		5E71404B26FA3733004F7407 /* TermsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsViewController.xib; sourceTree = "<group>"; };
-		5E71404F26FA377C004F7407 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5E71405026FA377C004F7407 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		5E71405526FA6286004F7407 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5E71404F26FA377C004F7407 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		5E71405026FA377C004F7407 /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
+		5E71405526FA6286004F7407 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 		5E71405726FA63D0004F7407 /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
 		5E71405A26FA6D5B004F7407 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5E71405D26FA7055004F7407 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		5EEDCEAA26FB888400288A5E /* SuggestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewModel.swift; sourceTree = "<group>"; };
 		5EEDCEAE26FBA13600288A5E /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
 		5EEDCEB026FBA1EA00288A5E /* AlamofireAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPIClient.swift; sourceTree = "<group>"; };
+		5EEDCEB326FBD8EC00288A5E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		75F5A1D70DAC6536AB4416DE /* Pods-NotBored.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.debug.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.debug.xcconfig"; sourceTree = "<group>"; };
 		B1FCE155F4EB5CD71DBC8ACB /* Pods-NotBored.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.release.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,11 +211,12 @@
 		5E71404E26FA3767004F7407 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5EEDCEB226FBD89900288A5E /* TabBar */,
 				1FC8B5C726FA7A3500EF1B5F /* Sugestion */,
 				5E71405C26FA703F004F7407 /* Cell */,
-				5E71405526FA6286004F7407 /* HomeViewModel.swift */,
-				5E71404F26FA377C004F7407 /* HomeViewController.swift */,
-				5E71405026FA377C004F7407 /* HomeViewController.xib */,
+				5E71405526FA6286004F7407 /* CategoriesViewModel.swift */,
+				5E71404F26FA377C004F7407 /* CategoriesViewController.swift */,
+				5E71405026FA377C004F7407 /* CategoriesViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -249,6 +252,14 @@
 				5EEDCEB026FBA1EA00288A5E /* AlamofireAPIClient.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		5EEDCEB226FBD89900288A5E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5EEDCEB326FBD8EC00288A5E /* TabBarViewController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		E13CBEFC578ABF0F7E064B2B /* Pods */ = {
@@ -333,7 +344,7 @@
 				1FC8B5CB26FA7A9D00EF1B5F /* SuggestionViewController.xib in Resources */,
 				5E71404826FA3487004F7407 /* InitialViewController.xib in Resources */,
 				5E71404D26FA3733004F7407 /* TermsViewController.xib in Resources */,
-				5E71405226FA377C004F7407 /* HomeViewController.xib in Resources */,
+				5E71405226FA377C004F7407 /* CategoriesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,10 +383,11 @@
 				1FC8B5CA26FA7A9D00EF1B5F /* SuggestionViewController.swift in Sources */,
 				5E71404326FA26E7004F7407 /* BaseViewController.swift in Sources */,
 				5E71405826FA63D0004F7407 /* InitialViewModel.swift in Sources */,
-				5E71405626FA6286004F7407 /* HomeViewModel.swift in Sources */,
+				5E71405626FA6286004F7407 /* CategoriesViewModel.swift in Sources */,
+				5EEDCEB426FBD8EC00288A5E /* TabBarViewController.swift in Sources */,
 				5E71403A26FA24FD004F7407 /* NavigationHelper.swift in Sources */,
 				5E71402226FA2381004F7407 /* AppDelegate.swift in Sources */,
-				5E71405126FA377C004F7407 /* HomeViewController.swift in Sources */,
+				5E71405126FA377C004F7407 /* CategoriesViewController.swift in Sources */,
 				5E71406226FA7568004F7407 /* TableView+Configure.swift in Sources */,
 				5EEDCEAB26FB888400288A5E /* SuggestionViewModel.swift in Sources */,
 				5E71404726FA3487004F7407 /* InitialViewController.swift in Sources */,

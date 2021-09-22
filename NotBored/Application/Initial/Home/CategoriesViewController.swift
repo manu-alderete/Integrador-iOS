@@ -7,14 +7,14 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+final class CategoriesViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var shuffleButton: UIButton!
     
-    var viewModel: HomeViewModel!
-    
-    init(viewModel: HomeViewModel) {
+    var viewModel: CategoriesViewModel!
+        
+    init(viewModel: CategoriesViewModel) {
         self.viewModel = viewModel
         super.init()
     }
@@ -43,11 +43,13 @@ class HomeViewController: BaseViewController {
     }
     
     @objc private func shuffleHandler() {
-        navigationController?.pushViewController(SuggestionViewController(participants: viewModel.participants), animated: true)
+        guard let parent = (self.parent as? TabBarController) else { return }
+        parent.selectedIndex = 1
+        //        navigationController?.pushViewController(SuggestionViewController(participants: viewModel.participants), animated: true)
     }
 }
 
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.categories.count
     }

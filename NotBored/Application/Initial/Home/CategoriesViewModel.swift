@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class HomeViewModel {
+final class CategoriesViewModel{
     let participants: Int?
     
     private(set) var categories: [Activity.ActivityType] = [] {

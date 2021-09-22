@@ -9,7 +9,7 @@ import UIKit
 
 class SuggestionViewController: BaseViewController {
 
-    @IBOutlet weak var backButton: UIButton!
+//    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var categoryView: UIView!
     
@@ -23,7 +23,7 @@ class SuggestionViewController: BaseViewController {
     
     let viewModel: SuggestionViewModel!
     
-    init(participants: Int?, category: Activity.ActivityType? = nil) {
+    init(participants: Int? = nil, category: Activity.ActivityType? = nil) {
         self.viewModel = SuggestionViewModel(
             service: ActivityService(),
             participants: participants,
@@ -46,7 +46,7 @@ class SuggestionViewController: BaseViewController {
         activityLabel.alpha = 0
         informationStack.alpha = 0
         self.nextButton.alpha = 0
-        backButton.addTarget(self, action: #selector(backHandler), for: .touchUpInside)
+//        backButton.addTarget(self, action: #selector(backHandler), for: .touchUpInside)
         viewModel.fetchActivity()
         
         viewModel.onSuccess = { [weak self] in
@@ -57,7 +57,6 @@ class SuggestionViewController: BaseViewController {
             self.activityLabel.alpha = 1
             self.informationStack.alpha = 1
             self.nextButton.alpha = 1
-            self.titleLabel.text = self.viewModel.category?.rawValue.capitalized
             self.categoryLabel.text = self.viewModel.activity?.activityType?.rawValue.capitalized
         }
         

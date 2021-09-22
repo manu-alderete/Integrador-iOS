@@ -63,8 +63,10 @@ class InitialViewController: BaseViewController {
     }
 
     @objc private func startHandler() {
-        let viewModel = HomeViewModel(participants: self.viewModel.participants)
-        NavigationHelper.setRoot(HomeViewController(viewModel: viewModel))
+        let vc = TabBarController(participants: viewModel.participants)
+        NavigationHelper.setRoot(vc)
+//        let viewModel = HomeViewModel(participants: self.viewModel.participants)
+//        NavigationHelper.setRoot(HomeViewController(viewModel: viewModel))
     }
     
     @objc private func termsHandler() {
