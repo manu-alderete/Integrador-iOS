@@ -25,7 +25,14 @@ class InitialViewController: BaseViewController {
         configureViews()
                 
         viewModel.onParticipantsValueChange = { [weak self] value in
-            self?.startButton.isEnabled = value != nil && value! > 0
+            guard let self = self else { return }
+            let valid = value != nil && value! >= 0 || (self.quantityTextField.text?.isEmpty ?? true)
+            
+            UIView.transition(with: self.startButton, duration: 0.3, options: .curveEaseIn) { [weak self] in
+                guard let self = self else { return }
+                self.startButton.backgroundColor = valid ? UIColor(named: "Bored Blue Light")  : UIColor.lightGray
+                self.startButton.isUserInteractionEnabled = valid
+            }
         }
         
         let attrs = [
@@ -67,13 +74,13 @@ class InitialViewController: BaseViewController {
     }
      
     @objc private func textFieldDidChange(_ textField: UITextField) {
-        guard textField === quantityTextField,
+        if textField === quantityTextField,
               let text = textField.text,
-              let value = Int(text) else
+              let value = Int(text)
         {
+            viewModel.participants = value
+        } else {
             viewModel.participants = nil
-            return
         }
-        viewModel.participants = value
     }
 }
