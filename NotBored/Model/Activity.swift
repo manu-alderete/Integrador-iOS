@@ -31,7 +31,7 @@ struct Activity: Codable {
     enum CodingKeys: String, CodingKey {
         case name = "activity"
         case accessibility
-        case activityType = "activity_type"
+        case activityType = "type"
         case participants
         case price
         case link
