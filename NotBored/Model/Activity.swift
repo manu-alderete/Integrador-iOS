@@ -46,7 +46,7 @@ struct Activity: Codable {
             } else if price <= 0.3 {
                 result = "Low"
             } else if price <= 0.6 {
-                result = "medium"
+                result = "Medium"
             } else {
                 result = "High"
             }
